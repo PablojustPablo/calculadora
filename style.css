@@ -1,0 +1,91 @@
+/* Establece estilos predeterminados para todos los elementos, evitando márgenes, rellenos y ajustando el modelo de caja */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    min-height: 100vh;
+    background-color: #381f07;
+    display: grid;
+    place-items: center;
+}
+
+/* Estilos para el contenedor principal de la calculadora */
+.calculadora {
+    background-color: #e48417;
+    box-shadow: 0 0.1rem 1rem #000000;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Utiliza "1fr" en lugar de "ifr" */
+    gap: .5rem;
+}
+
+/* Estilos para la pantalla de la calculadora */
+.pantalla {
+    grid-column: 1 / 5;
+    background-color: #af6209;
+    overflow-x: auto;
+    word-wrap: break-word;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+/* Estilos para los botones de la calculadora */
+.btn {
+    background-color: #e48417;
+    color: white;
+    border: 1px solid #693a04; /* Agrega "solid" al valor de la propiedad "border" */
+    box-shadow: 0 0.1rem 1rem #5a3306;
+    padding: 1.5rem 0.5rem; /* Ajusta el relleno vertical y horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Efecto de hover para los botones */
+.btn:hover {
+    background-color: #af6209;
+}
+
+/* Estilos específicos para el botón cero */
+#cero { 
+    grid-column: span 2;
+    border-radius: 2rem;
+}
+
+/* Estilos específicos para el botón igual */
+#igual {
+    grid-row: span 2;
+    background-color: #cf2900;
+    border-radius: 2rem;
+}
+
+/* Efecto de hover para el botón igual */
+#igual:hover {
+    background-color: #eb3002;
+}
+
+/* Estilos específicos para el botón de borrado */
+#c {
+    background-color: #cf2900;
+}
+
+/* Efecto de hover para el botón de borrado */
+#c:hover {
+    background-color: #eb3002;
+}

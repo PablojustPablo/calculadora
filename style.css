@@ -24,7 +24,7 @@ body {
     padding: 1.5rem;
     border-radius: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Utiliza "1fr" en lugar de "ifr" */
+    grid-template-columns: repeat(4, 1fr); 
     gap: .5rem;
 }
 
@@ -47,9 +47,9 @@ body {
 .btn {
     background-color: #e48417;
     color: white;
-    border: 1px solid #693a04; /* Agrega "solid" al valor de la propiedad "border" */
+    border: 1px solid #693a04;
     box-shadow: 0 0.1rem 1rem #5a3306;
-    padding: 1.5rem 0.5rem; /* Ajusta el relleno vertical y horizontal */
+    padding: 1.5rem 0.5rem; 
     display: flex;
     justify-content: center;
     align-items: center;
